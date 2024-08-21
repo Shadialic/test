@@ -1,18 +1,20 @@
 import { useState } from 'react'
-import { Routes, Route } from "react-router-dom";
-
 
 import './App.css'
-import AdminRoutes from './routes/AdminRoutes';
+import Checking from './componets/Cheking'
+
 
 function App() {
-
+  
   return (
     <>
-    <Routes>
-          <Route path="/*" element={<AdminRoutes />} />
-        </Routes>
-      
+    <Checking/>
+{/* <h1>sss</h1> */}
+
+
+     
+   
+       
     </>
   )
 }

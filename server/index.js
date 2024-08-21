@@ -28,7 +28,7 @@ mongoose.connect(process.env.MONGODB_URI, {
   console.error('MongoDB connection error:', error);
 });
 
-const Routes = require("./routes/adminRoutes");
+const Routes = require("./routes/routes");
 app.use("/",Routes);
 
 app.use((err, req, res, next) => {
